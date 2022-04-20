@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<students>
+        <Masv>21IT324</Masv>  
+        <Tensv>Tran DUC VU</Tensv>  
+        <Mark>8</Mark>  
+        <Physical>8.3</Physical>  
+        <Chemistry>8.3</Chemistry>  
+ </students>
+<students>
+        <Masv>21IT388</Masv>  
+        <Tensv>Trinh Cong Toan</Tensv>  
+        <Mark>8</Mark>  
+        <Physical>8.3</Physical>  
+        <Chemistry>8.3</Chemistry> 
+    </students>  
+    <students>  
+    <Masv>21IT398</Masv>  
+        <Tensv>Duong Dang Quang</Tensv>  
+        <Mark>8</Mark>  
+        <Physical>8.3</Physical>  
+        <Chemistry>8.3</Chemistry>
+    </students>  
+  
+</class>

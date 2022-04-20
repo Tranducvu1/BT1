@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<store>
+    <book category="IT">
+        <title lang="en">Hoahanna</title>
+        <authors>
+            <author>
+                <name>Giada De Laurentiis</name>
+                <country>Italy</country>
+            </author>
+        </authors>
+        <year>2005</year>
+        <price>30.00</price>
+        <publisher>XXX</publisher>
+    </book>
+    <book category="children">
+        <title lang="en">Harry Potter</title>
+        <authors>
+            <author>
+                <name>J K. Rowling</name>
+                <country>UK</country>
+            </author>
+        </authors>
+        <year>2005</year>
+        <price>29.99</price>
+    </book>
+    <book category="web">
+        <title lang="en">XQuery Kick Start</title>
+        <authors>
+            <author>
+                <name>James McGovern</name>
+                <country>US</country>
+            </author>
+            <author>
+                <name>Per Bothner</name>
+                <country>US</country>
+            </author>
+            <author>
+                <name>Kurt Cagle</name>
+                <country>US</country>
+            </author>
+        </authors>
+        <year>2003</year>
+        <price>49.99</price>
+    </book>
+    <book category="web">
+        <title lang="en">Learning XML</title>
+        <authors>
+            <author>
+                <name>Erik T. Ray</name>
+                <country>US</country>
+            </author>
+        </authors>
+        <year>2003</year>
+        <price>39.95</price>
+    </book>
+</store>
