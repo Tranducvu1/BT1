@@ -1,86 +1,62 @@
-
 package Model;
 
+import java.util.Scanner;
 
+import javax.xml.bind.annotation.XmlAttribute;
+import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlType;
 
-@XmlType(namespace="http://www.example.org/type")
-@XmlRootElement(name = "student")
+@XmlRootElement
 public class Student {
-
-
-    private String masv;
-
-    private String tensv;
-
-    private  String mark;
-    private String physical;
-    private String chemistry;
-
-	public Object xml;
-
-
-
+	 int id;
+	 String name;
+	 String age;
+	 public Student() {
+		 this.id = 0;
+		 this.name = "";
+		 this.age = "";
+	 }
+	 public Student(int id, String name, String age) {
+		 this.id = id;
+		 this.name = name;
+		 this.age = age;
+	 }
+	public int getId() {
+		return id;
+	}
+	@XmlAttribute
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getName() {
+		return name;
+	}
+	@XmlElement
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getAge() {
+		return age;
+	}
+	@XmlElement
+	public void setAge(String age) {
+		this.age = age;
+	}
+	public String toString() {
+		return "id ="+this.id+" name = "+this.name+" age = "+this.age;
+	}
+	public Student them() {
+		Student st = new Student();
+		Scanner sc = new Scanner(System.in);
+		System.out.println("nhap id ");
+		st.id = sc.nextInt();
+		sc.nextLine();
+		System.out.println("nhap ten ");
+		st.name = sc.nextLine();
+		System.out.println("nhap tuoi ");
+		st.age = sc.nextLine();
+		return st;
+	}
 	
-	  public Student() { super(); }
-	 
-    
-    public Student(String masv,String tensv,String mark,String physical,String chemistry) {
-        super();
-        this.masv = masv;
-        this.tensv = tensv;
-        this.mark=mark;
-
-    }
-	public String getMasv() {
-		return masv;
-	}
-
-	public void setMasv(String masv) {
-		this.masv = masv;
-	}
-
-	public String getTensv() {
-		return tensv;
-	}
-
-	public void setTensv(String tensv) {
-		this.tensv = tensv;
-	}
-
-	public String getMark() {
-		return mark;
-	}
-
-	public void setMark(String mark) {
-		this.mark = mark;
-	}
-
-	public String getPhysical() {
-		return physical;
-	}
-
-	public void setPhysical(String physical) {
-		this.physical = physical;
-	}
-
-	public String getChemistry() {
-		return chemistry;
-	}
-
-	public void setChemistry(String chemistry) {
-		this.chemistry = chemistry;
-	}
-
-
-    
-    @Override
-    public String toString() {
-        return "Students{" + "name=" + tensv + ", mark=" + mark+ ", physical=" + physical + "chemistry=" + chemistry+ '}';
-    }
-
-	
-
 
 }

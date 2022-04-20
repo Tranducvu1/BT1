@@ -1,1 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?><Sinh_vien><Ma_sinh_vien>21it324</Ma_sinh_vien><Ten_sinh_vien>vu</Ten_sinh_vien><Mark>9</Mark><Physical>8</Physical><Chemistry>9</Chemistry><student></student></Sinh_vien>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<studentList>
+	<stlist id="1">
+		<age>19</age>
+		<name>Vu</name>
+	</stlist>
+	<stlist id="2">
+		<age>19</age>
+		<name>Toan</name>
+	</stlist>
+	<stlist id="4">
+		<age>19</age>
+		<name>Quang</name>
+	</stlist>
+	<stlist id="1">
+		<age>1</age>
+		<name>1</name>
+	</stlist>
+</studentList>

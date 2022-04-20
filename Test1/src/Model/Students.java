@@ -1,24 +1,49 @@
 package Model;
 
-//import java.awt.print.Book;
+import java.util.ArrayList;
 
-import java.util.List;
-
-import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlType;
-@XmlType(namespace="http://www.example.org/type")
-@XmlRootElement(name = "studen")
-public class Students 
-{
 
-  @XmlElement(name = "student")
-  private List<Student> students = null;
- 
-  public List<Student> getstudent() {
-    return students;
-  }
-  public void setStudent(List<Student> Students) {
-    this.students=Students;
-  }
+@XmlRootElement
+public class Students {
+	ArrayList<Student> stlist = new ArrayList();
+	public Students() {
+		stlist = new ArrayList();
+	}
+	public Students(ArrayList<Student> stlist) {
+		this.stlist = stlist;
+	}
+	public ArrayList<Student> getStlist() {
+		return stlist;
+	}
+	public void setStlist(ArrayList<Student> stlist) {
+		this.stlist = stlist;
+	}
+	public void add(Student st) {
+		stlist.add(st);
+	}
+	public String toString() {
+		String ans="";
+		for(Student st:stlist) {
+			ans = ans+st.toString()+"\n";
+		}
+		return ans;
+	}
+	public Students sua(int id, Student st) {
+		for(int i = 0; i < stlist.size(); i++) {
+			if(id == stlist.get(i).getId()) {
+				stlist.set(i, st);
+			}
+		}
+		return new Students(stlist);
+	}
+	public Students xoa(int id) {
+		for(int i = 0; i < stlist.size(); i++) {
+			if(id == stlist.get(i).getId()) {
+				stlist.remove(i);
+			}
+		}
+		return new Students(stlist);
+	}
+
 }
